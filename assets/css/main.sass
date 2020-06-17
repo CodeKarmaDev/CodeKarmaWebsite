@@ -1,52 +1,38 @@
 ---
 ---
 
-$fill: #19141e
-$fill2: #2e2835 
 
-$scribe: #d3c9d6
-$scribe2: #a399a6
+@import layout
+@import colors
+@import header
+@import links
+@import home
 
-$focus: #70d665
-$focus2: #7db9a1
+body, body *
+    box-sizing: border-box
 
-$min: 23rem
+strong
+    font-weight: bold
+    color: $scribe
 
+body
+    font-size: 1.1rem
+    font-family: 'Fira Sans', sans-serif
+    line-height: 2.5em;
+    color: $scribe
+    background-color: $fill
+    
 
 h1, h2, h3, h4, h5, h6
     color: $scribe2
+    font-weight: normal
+    max-width: 30em
+    line-height: 1em
 
-body, body *
-    // line-height: 2em
-    // font-family: fria
-    box-sizing: border-box
+    strong
+        color: $focus
 
-body
-    font-family: 'Fira Sans'
-    color: $scribe
-    background-color: $fill
-    display: grid
-    grid-template-columns: 1fr minmax($min, 6fr) 1fr ;
-    padding: 0
-    margin: 0
-    width: 100%
+p
+    padding: 1rem 0
+    max-width: 25rem
 
-body > *
-    grid-column-start: 2
-
-header
-    background-color: red
-    background-image: linear-gradient(0deg, $fill, $fill2)
-    grid-column: 1 / span 3
-    display: grid
-    grid-auto-flow: column
-    grid-column: 1fr minmax($min, auto)
-    .name
-        grid-column: 1
-        grid-row: 2
-        margin-left: 2rem
-
-
-img.logo
-    width: 20rem
-    margin-bottom: -2rem

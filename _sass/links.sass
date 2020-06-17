@@ -1,0 +1,33 @@
+
+@import colors
+    
+$link-hover: -3px
+
+a
+    outline: none
+    color: $focus2
+    transform: translateY(0)
+    transition: transform 50ms ease-out
+    &:hover, &:active, &:focus
+        color: $focus
+        transform: translateY($link-hover)
+
+.big-link
+    text-decoration: none
+    font-size: 1.5rem
+    position: relative
+    &:after
+        transition: transform 150ms ease-in
+        transform: scaleX(0)
+        position: absolute
+        content: " "
+        background-color: currentColor
+        width: 100%
+        height: 2px
+        bottom: -0.5rem
+        left: 0
+
+.big-link:hover, .big-link:active, .big-link:focus 
+    transform: translateY($link-hover)
+    &:after
+        transform: scaleX(1)

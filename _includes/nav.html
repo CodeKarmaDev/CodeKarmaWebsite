@@ -1,0 +1,10 @@
+
+<nav class="vov fade-in-up">
+    {% for link in site.data.navlinks %}
+        <a 
+            class="link big-link"
+            href="{{ link.href }}"
+            >{{ link.title }}</a>
+
+    {% endfor %}
+</nav>

@@ -6,9 +6,9 @@ layout: home
 title: Sean Ferney
 ---
 
-Hi, Im Sean Ferney. A Web Developer who is focused on doing things right. 
+Hi, Im **Sean Ferney**. A Web Developer who is focused on doing things right. 
 
-# I Make Websites 
+# I MAKE **WEBSITES**
 
-### Beautiful, Functional, Maintainable
+## Beautiful, Functional, Maintainable
 

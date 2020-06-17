@@ -1,0 +1,26 @@
+
+.home
+    display: grid
+    align-self: end
+    grid-template-columns: repeat(1, minmax(0, 1fr)) 10fr
+
+    h1, h2, h3, h4, h5, h6
+        margin: 0
+        grid-column: 1 / span 2
+    h1
+        font-size: 6rem
+        margin-top: 10rem
+        color: $scribe
+    h2
+        font-size: 3rem
+    p
+        grid-column-start: 2
+        font-size: 1.2rem
+
+@media screen and ( min-width: 80rem )
+    .home 
+        grid-template-columns: repeat(2, minmax(0, 1fr)) 10fr
+        p
+            grid-column-start: 3
+        h1, h2, h3, h4, h5, h6
+            grid-column: 2 / span 2
