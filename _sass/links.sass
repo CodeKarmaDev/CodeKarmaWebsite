@@ -6,14 +6,16 @@ $link-hover: -3px
 a
     outline: none
     color: $focus2
-    transform: translateY(0)
     transition: transform 50ms ease-out
+    transform: translateY(0)
     &:hover, &:active, &:focus
         color: $focus
         transform: translateY($link-hover)
 
-.big-link
+.link
     text-decoration: none
+
+.big-link
     font-size: 1.5rem
     position: relative
     &:after
@@ -28,6 +30,17 @@ a
         left: 0
 
 .big-link:hover, .big-link:active, .big-link:focus 
-    transform: translateY($link-hover)
     &:after
         transform: scaleX(1)
+
+.social-link
+    i
+        transition: transform 50ms ease-out
+        transform: translateY(0)
+    
+    color: $mute
+    &:hover, &:active, &:focus
+        color: $scribe2
+        & >
+            transform: translateY($link-hover)
+

@@ -1,12 +1,14 @@
 
 - name: bob
-  icon: fa circle 
+  icon: fa fa-github 
   href: /
 
 - name: github
-  icon: fa circle 
+  icon: fa fa-github 
   href: /
 
 - name: bob
-  icon: fa circle 
+  icon: fa fa-github 
   href: /
+
+# <i class="fa fa-github" aria-hidden="true"></i>

@@ -1,3 +1,18 @@
 <footer>
-    stuff
+
+    {% for link in site.data.social %}
+        <a 
+            class="link social-link"
+            href="{{ link.href }}"
+            >
+            
+            <i 
+                class="{{ link.icon }} fa-3x" 
+                aria-hidden="true"
+                ></i>
+
+            </a>
+
+    {% endfor %}
+
 </footer>
