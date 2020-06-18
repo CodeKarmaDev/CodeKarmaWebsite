@@ -1,16 +1,20 @@
 
-- name: bob
+- name: Github
   icon: fa fa-github 
-  href: /
+  href: https://github.com/CodeKarmaDev
 
-- name: github
+- name: Twitter
   icon: fa fa-twitter-square
-  href: /
+  href: https://twitter.com/codekarmadev
 
-- name: bob
+- name: Youtube
   icon: fa fa-youtube
-  href: /
+  href: https://www.youtube.com/channel/UCaLIPj1StWhkVanXvdyp6Uw
 
-- name: bob
+- name: Linkedin
   icon: fa fa-linkedin
-  href: /
+  href: https://www.linkedin.com/in/seanferney/
+
+- name: Email
+  icon: fas fa-envelope
+  href: mailto:sean@codekarma.dev
