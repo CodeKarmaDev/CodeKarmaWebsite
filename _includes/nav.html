@@ -1,8 +1,16 @@
 
-<nav class="vov fade-in-up">
+<nav>
     {% for link in site.data.navlinks %}
+        
+        {% assign current = nil %}
+        
+        {% if page.permalink == link.href %}
+            {% assign current = 'current-link' %}
+        {% endif %}
+
+
         <a 
-            class="link big-link"
+            class="link big-link {{ current }}"
             href="{{ link.href }}"
             >{{ link.title }}</a>
 

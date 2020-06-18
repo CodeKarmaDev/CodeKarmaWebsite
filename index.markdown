@@ -4,6 +4,7 @@
 
 layout: home
 title: Sean Ferney
+permalink: /
 ---
 
 Hi, Im **{{ site.data.info.name }}**. A Web Developer who is focused on doing things right. 

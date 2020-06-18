@@ -3,24 +3,19 @@
     
 $link-hover: -3px
 
-a
-    outline: none
-    color: $focus2
+    
+%up
+    transform: translateY($link-hover)
+
+%float
     transition: transform 50ms ease-out
     transform: translateY(0)
     &:hover, &:active, &:focus
-        color: $focus
-        transform: translateY($link-hover)
+        @extend %up
 
-.link
-    text-decoration: none
-
-.big-link
-    font-size: 1.5rem
+%underline
     position: relative
     &:after
-        transition: transform 150ms ease-in
-        transform: scaleX(0)
         position: absolute
         content: " "
         background-color: currentColor
@@ -28,13 +23,40 @@ a
         height: 2px
         bottom: -0.5rem
         left: 0
+// .link.underline
+
+a
+    @extend %float
+    outline: none
+    color: $focus2
+    transition: transform 50ms ease-out
+    transform: translateY(0)
+    &:hover, &:active, &:focus
+        color: $focus
+
+.link
+    text-decoration: none
+
+.big-link
+    @extend %underline
+    font-size: 1.5rem
+    &:after
+        transition: transform 150ms ease-in
+        transform: scaleX(0)
+
+
 
 .big-link:hover, .big-link:active, .big-link:focus 
     &:after
         transform: scaleX(1)
 
+.current-link
+    color: $scribe2
+    &:after
+        transform: scaleX(0.5)
+
 .social-link
-    i
+    & >
         transition: transform 50ms ease-out
         transform: translateY(0)
     
@@ -42,5 +64,6 @@ a
     &:hover, &:active, &:focus
         color: $scribe2
         & >
+            // @extend %up
             transform: translateY($link-hover)
 
