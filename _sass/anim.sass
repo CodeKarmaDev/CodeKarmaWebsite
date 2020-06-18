@@ -1,0 +1,44 @@
+
+
+
+
+$speed: 1s
+$dist: 4rem
+$func: ease-in-out
+
+@keyframes anim-slide-right
+    0%
+        transform: translateX(0)
+    100%
+        transform: translateX(-$dist)
+
+@keyframes anim-slide-left
+    0%
+        transform: translateX(0)
+    100%
+        transform: translateX($dist)
+
+@keyframes anim-fade-in
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes anim-fade-out
+    0%
+        opacity: 1
+    100%
+        opacity: 0
+
+%anim
+    animation-timing-function: $func
+
+.anim.fade-out-left
+    opacity: 0
+    animation: anim-slide-right $speed, anim-fade-out $speed
+    animation-timing-function: $func
+
+.anim.fade-in-left
+    opacity: 1
+    animation: anim-slide-left reverse $speed, anim-fade-in $speed
+    animation-timing-function: $func

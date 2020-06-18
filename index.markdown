@@ -6,7 +6,7 @@ layout: home
 title: Sean Ferney
 ---
 
-Hi, Im **Sean Ferney**. A Web Developer who is focused on doing things right. 
+Hi, Im **{{ site.data.info.name }}**. A Web Developer who is focused on doing things right. 
 
 # I MAKE **WEBSITES**
 

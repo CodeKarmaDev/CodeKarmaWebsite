@@ -4,11 +4,13 @@
   href: /
 
 - name: github
-  icon: fa fa-github 
+  icon: fa fa-twitter-square
   href: /
 
 - name: bob
-  icon: fa fa-github 
+  icon: fa fa-youtube
   href: /
 
-# <i class="fa fa-github" aria-hidden="true"></i>
+- name: bob
+  icon: fa fa-linkedin
+  href: /
