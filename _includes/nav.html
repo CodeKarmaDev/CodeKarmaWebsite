@@ -5,12 +5,12 @@
         {% assign current = nil %}
         
         {% if page.permalink == link.href %}
-            {% assign current = 'current-link' %}
+            {% assign current = 'current' %}
         {% endif %}
 
 
         <a 
-            class="link big-link {{ current }}"
+            class="link nav-link {{ current }}"
             href="{{ link.href }}"
             >{{ link.title }}</a>
 

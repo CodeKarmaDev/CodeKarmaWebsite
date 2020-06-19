@@ -3,29 +3,27 @@
 
 .content
     display: grid
+    // position: relative
 
-    grid-template-columns: minmax(0, 1fr) minmax(auto, 10fr) minmax(0, 1fr)
-    grid-template-rows: 40vh 1fr auto
+    grid-template-columns: minmax(0, 1fr) repeat( 1, minmax(auto, 20fr)) minmax(0, 1fr)
+    grid-template-rows: 15vh minmax(85vh, auto)
+    grid-auto-rows: minmax(10rem, auto)
+
+    &.spacer
+        grid-template-rows: 40vh minmax(60vh, auto)
+
 
     min-height: 100vh
 
     & > *
-        grid-column-start: 2
-
-    main
-        grid-row: 2 / 3
-        grid-column: 2 / 3    
-// body
-//     display: grid
-//     grid-template-columns: minmax(0, 1fr) minmax(auto, 20fr) minmax(0, 1fr)
-//     grid-template-rows: auto 1fr auto
-//     padding: 0
-//     margin: 0
-//     width: 100%
+        grid-column: 2 / 4
+        
+    .hero, footer
+        align-self: center
 
 
 
-// @media screen and ( min-width: 70rem )
+@media screen and ( min-width: 75rem )
 
-//     body
-//         grid-template-columns: 1fr minmax($min, 6fr) 1fr
+    .content
+        grid-template-columns: minmax(0, 1fr) repeat( 2, minmax(auto, 2fr)) minmax(0, 1fr)

@@ -4,14 +4,10 @@
 $link-hover: -3px
 
     
-%up
-    transform: translateY($link-hover)
-
 %float
     transition: transform 50ms ease-out
-    transform: translateY(0)
     &:hover, &:active, &:focus
-        @extend %up
+        transform: translateY($link-hover)
 
 %underline
     position: relative
@@ -23,47 +19,39 @@ $link-hover: -3px
         height: 2px
         bottom: -0.5rem
         left: 0
-// .link.underline
 
 a
     @extend %float
+    display: inline-block
     outline: none
     color: $focus2
-    transition: transform 50ms ease-out
-    transform: translateY(0)
+    position: relative
+
     &:hover, &:active, &:focus
         color: $focus
+
 
 .link
     text-decoration: none
 
-.big-link
+.nav-link
     @extend %underline
     font-size: 1.5rem
     &:after
         transition: transform 150ms ease-in
         transform: scaleX(0)
 
-
-
-.big-link:hover, .big-link:active, .big-link:focus 
+.nav-link:hover, .nav-link:active, .nav-link:focus 
     &:after
         transform: scaleX(1)
 
-.current-link
+.nav-link.current
     color: $scribe2
     &:after
         transform: scaleX(0.5)
 
-.social-link
-    & >
-        transition: transform 50ms ease-out
-        transform: translateY(0)
-    
+a.mute, .mute a
     color: $mute
     &:hover, &:active, &:focus
         color: $scribe2
-        & >
-            // @extend %up
-            transform: translateY($link-hover)
 

@@ -58,8 +58,8 @@ sass:
 #   - vendor/ruby/
 
 
-# defaults:
-#   - scope:
-#     path: ""
-#     values:
-#       layout: 'home'
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: 'root'

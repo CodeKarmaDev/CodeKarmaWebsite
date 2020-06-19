@@ -1,18 +1,15 @@
 
 @import colors
 
-.header-bg
-    background-color: $fill2
-    background-image: linear-gradient(0deg, $fill, $fill2)
+        
+
 
 header
-    $pad: 0rem
     display: grid
     
     .subtitle
         grid-column: 1
         grid-row: 2
-        margin-left: $pad
     nav
         display: grid
         grid-auto-flow: column
@@ -20,13 +17,12 @@ header
         column-gap: 3rem
         align-self: end
         justify-self: end
-        margin-right: $pad
 
     .logo
         $offset: -2rem
         width: 20rem
         margin-bottom: $offset
-        margin-left: $offset + $pad
+        margin-left: $offset
 
 @media screen and ( min-width: 70rem )
     header

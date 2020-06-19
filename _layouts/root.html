@@ -7,31 +7,50 @@
 
 <body>
     
-    <div class="gui">
+    <div class="gui header">
 
-        <div class="header-bg"></div>
+        <div class="bg">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
         <header>
             {% include header.html %}
         </header>
 
-        <aside class="social">
-            {% include social.html %}
-        </aside>
     </div>
     
-    <div class="content">
-        <!-- <div class="content-spacer"></div> -->
+    <div class="content {% if page.hero %}spacer{% endif %}  bf fade-in-left x2">
 
-        <main>
+        <div></div>
+
+        {% include hero.html %}
+
+        <main class="{{ page.class }}">
             {{ content }}
         </main>
 
         <footer>
             {%  include footer.html %}
         </footer>
+        
+        <div></div>
     </div>
 
+    <div class="gui footer">
+
+        <div class="bg">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <footer class="social">
+            {% include social.html %}
+        </footer>
+    </div>
+    
 
 </body>
 </html>
