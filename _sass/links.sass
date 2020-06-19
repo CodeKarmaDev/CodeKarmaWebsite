@@ -20,38 +20,49 @@ $link-hover: -3px
         bottom: -0.5rem
         left: 0
 
-a
+a, .link
     @extend %float
     display: inline-block
     outline: none
     color: $focus2
     position: relative
+    padding: 0 0.2em
 
     &:hover, &:active, &:focus
         color: $focus
-
-
-.link
-    text-decoration: none
-
-.nav-link
-    @extend %underline
-    font-size: 1.5rem
-    &:after
-        transition: transform 150ms ease-in
-        transform: scaleX(0)
-
-.nav-link:hover, .nav-link:active, .nav-link:focus 
-    &:after
-        transform: scaleX(1)
-
-.nav-link.current
-    color: $scribe2
-    &:after
-        transform: scaleX(0.5)
 
 a.mute, .mute a
     color: $mute
     &:hover, &:active, &:focus
         color: $scribe2
+
+.no-float
+    &:hover, &:active, &:focus
+        transform: translateY(0)
+
+
+
+.link
+    text-decoration: none
+    
+    &.nav-link
+        @extend %underline
+        font-size: 1.5rem
+        &:after
+            transition: transform 150ms ease-in
+            transform: scaleX(0)
+
+    &.nav-link:hover, &.nav-link:focus 
+        color: $focus
+        &:after
+            transform: scaleX(0.7)
+
+
+    &.nav-link.current
+        &:after
+            transform: scaleX(0.2)
+        color: $scribe2
+        @extend .no-float
+
+
 

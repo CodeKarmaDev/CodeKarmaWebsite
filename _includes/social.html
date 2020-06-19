@@ -3,18 +3,20 @@
 
 {% for link in site.data.social %}
     <a 
-        class="link mute bfade fade-in x4"
+        class="link mute bf fade-in x2"
         target="_blank"
         href="{{ link.href }}"
+        aria-label="{{ link.name }}"
         >
         
         <i
             class="{{ link.icon }} fa-3x" 
             aria-hidden="true"
+            title="{{ link.name }}"
             ></i>
+            
+        <!-- {{link.name}} -->
 
-        </a>
+        </a>        
         
-        
-
 {% endfor %}

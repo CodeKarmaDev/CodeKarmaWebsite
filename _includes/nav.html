@@ -2,17 +2,23 @@
 <nav>
     {% for link in site.data.navlinks %}
         
-        {% assign current = nil %}
         
         {% if page.permalink == link.href %}
-            {% assign current = 'current' %}
+            <span 
+                class="link nav-link current "
+                href="{{ link.href }}"
+                >{{ link.title }}</span>
+
+        {% else %}
+            <a 
+                class="link nav-link "
+                href="{{ link.href }}"
+                >{{ link.title }}</a>
+
+
         {% endif %}
 
 
-        <a 
-            class="link nav-link {{ current }}"
-            href="{{ link.href }}"
-            >{{ link.title }}</a>
 
     {% endfor %}
 </nav>
