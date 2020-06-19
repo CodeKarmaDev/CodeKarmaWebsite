@@ -1,29 +1,23 @@
 
 
-@import colors
+// @import colors
 
-body
-    display: grid
-    grid-template-columns: minmax(0, 1fr) minmax(auto, 20fr) minmax(0, 1fr)
-    grid-template-rows: auto 1fr auto
-    padding: 0
-    margin: 0
-    width: 100%
-    min-height: 100vh
+// body
+//     display: grid
+//     grid-template-columns: minmax(0, 1fr) minmax(auto, 20fr) minmax(0, 1fr)
+//     grid-template-rows: auto 1fr auto
+//     padding: 0
+//     margin: 0
+//     width: 100%
+//     min-height: 100vh
 
 
-body > *
-    grid-column-start: 2
+// body > *
+//     grid-column-start: 2
     
-header, footer
-    grid-column: 2 / span 1
-header, .header-bg
-    grid-row: 1 / span 1
-.header-bg
-    grid-column: 1 / span 3
 
-@media screen and ( min-width: 70rem )
+// @media screen and ( min-width: 70rem )
 
-    body
-        grid-template-columns: 1fr minmax($min, 6fr) 1fr
+//     body
+//         grid-template-columns: 1fr minmax($min, 6fr) 1fr
 

@@ -1,0 +1,23 @@
+
+
+.gui
+    margin: 0
+    position: fixed
+    top: 0
+    right: 0
+    width: 100vw
+    height: 100vh
+    display: grid
+    grid-template-columns: minmax(0, 1fr) minmax(auto, 10fr) minmax(0, 1fr)
+    grid-template-rows: auto 1fr auto
+
+    header, aside
+        grid-column: 2 / span 1
+    header, .header-bg
+        grid-row: 1 / span 1
+    .header-bg
+        grid-column: 1 / span 3
+
+    aside
+        grid-row: 3 / span 1
+    

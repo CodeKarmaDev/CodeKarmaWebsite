@@ -7,11 +7,31 @@
 
 <body>
     
-    {% include header.html %}
-    
-    {{ content }}
+    <div class="gui">
 
-    {%  include footer.html %}
+        <div class="header-bg"></div>
+
+        <header>
+            {% include header.html %}
+        </header>
+
+        <aside class="social">
+            {% include social.html %}
+        </aside>
+    </div>
+    
+    <div class="content">
+        <!-- <div class="content-spacer"></div> -->
+
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            {%  include footer.html %}
+        </footer>
+    </div>
+
 
 </body>
 </html>

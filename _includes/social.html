@@ -1,0 +1,16 @@
+
+{% for link in site.data.social %}
+    <a 
+        class="link social-link bfade fade-in x4"
+        target="_blank"
+        href="{{ link.href }}"
+        >
+        
+        <i
+            class="{{ link.icon }} fa-3x" 
+            aria-hidden="true"
+            ></i>
+
+        </a>
+
+{% endfor %}
