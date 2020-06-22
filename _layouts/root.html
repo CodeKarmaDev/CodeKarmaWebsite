@@ -19,22 +19,22 @@
 
     </div>
     
-    <div class="content {% if page.hero %}spacer{% endif %}  bf fade-in-left x1">
+    <main class="content {% if page.hero %}spacer{% endif %}  bf fade-in-left x1">
 
         <div></div>
 
         {% include hero.html %}
 
-        <main class="{{ page.class }}">
+        <section class="{{ page.class }} page">
             {{ content }}
-        </main>
+        </section>
 
         <footer>
             {%  include footer.html %}
         </footer>
         
         <div></div>
-    </div>
+    </main>
 
     <div class="gui footer">
 

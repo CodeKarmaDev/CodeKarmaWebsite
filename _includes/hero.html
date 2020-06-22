@@ -1,8 +1,12 @@
 
 {% if page.hero %}
-    <div class="hero">
+    <section class="hero">
         {{ page.hero | markdownify }}
-    </div>
-
-    <div></div>
+        
+        <hr>
+        
+        <i class="fas fa-angle-double-down fa-3x shadow scroll"></i>
+    </section>
+    
+    <!-- <div></div> -->
 {% endif %}

@@ -7,27 +7,33 @@ spacer: true
 title: Sean Ferney
 permalink: /
 hero: "
-Hi, Im **Sean Ferney**. A Web Developer who is focused on doing things right.
+Hi, I'm **Sean Ferney**. I love building software that solves your problems and fits your needs.
 
 # I MAKE **WEBSITES**
 
-## Beautiful, Functional, Maintainable"
+## Beautiful, Functional, Maintainable
+
+"
 ---
 
-## Maintainable
+
+When your needs change, you will want your code to change. 
+Thats why I make decisions now that will save time, money, and effort later.
+Its what I like to call **Code Karma**.
 
 
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
-this is why our websites are maintainable and stuff so yea
+Build good karma does not require anything fancy or complicated.
+- I ensure that we are solving the right problem
+by taking a little extra time to understand the clients needs. 
+- I avoid known pitfalls
+by spending a few minutes researching solutions.
+- I give my clients more options by
+keeping my code maintainable
+and committing to good development practices.
 
-[link](http://example.com) more stuff
+
+
+
+
+
+
