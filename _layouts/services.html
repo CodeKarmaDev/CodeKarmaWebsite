@@ -3,7 +3,7 @@ layout: root
 ---
 
 
-<section class="{{ page.class }} services grid">
+<section class="{{ page.class }} services grid bf fade-in-left x1">
     {% assign services = site.services | sort: 'order' %}
     {% for service in services %}
         {% include service.html %}
