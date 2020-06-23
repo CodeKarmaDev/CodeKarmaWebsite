@@ -5,13 +5,16 @@ $size: 2rem
     position: relative
     justify-self: end
     width: 100%
+    display: grid
 
     justify-items: center
     justify-content: end
     margin: $size / 2 0
-    display: grid
-    grid-auto-flow: start
+    grid-auto-flow: row
     grid-gap: $size * 2
-    grid-template-columns: repeat( auto-fit, $size * 2 )
-    grid-template-rows: auto
+    grid-auto-rows: auto
+    grid-auto-columns: auto
 
+@media screen and ( min-width: 75rem )
+    .social
+        grid-auto-flow: column

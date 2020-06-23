@@ -62,4 +62,10 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: 'root'
+      layout: 'main'
+
+
+collections:
+  services:
+    output: true
+    permalink: /:collection/:title

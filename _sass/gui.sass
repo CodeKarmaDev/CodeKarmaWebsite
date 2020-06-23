@@ -13,17 +13,18 @@
                 left: 0
                 width: 100%
                 height: 100%
-    &.footer
-        background-image: linear-gradient(0deg, $fill, #0000)
 
 
 .gui
     margin: 0
     position: fixed
-    width: 100vw
     display: grid
     grid-template-columns: minmax(0, 1fr) minmax(auto, 25fr) minmax(0, 1fr)
     grid-template-rows: auto
+
+
+    &.header
+        width: 100vw
 
     header, aside, footer
         grid-column: 2 / span 1
@@ -32,19 +33,23 @@
     .bg
         grid-column: 1 / span 3
 
-    aside, footer
-        grid-row: 3 / span 1
-
     &.header
         top: 0
         right: 0
     
     &.footer
         bottom: 0
-        left: 0
+        right: 0
 
 
 @media screen and ( min-width: 75rem )
 
     .gui
         grid-template-columns: minmax(0, 1fr) minmax(auto, 5fr) minmax(0, 1fr)
+    
+        aside, footer
+            grid-row: 3 / span 1
+
+        &.footer
+            background-image: linear-gradient(0deg, $fill, #0000)
+            width: 100vw

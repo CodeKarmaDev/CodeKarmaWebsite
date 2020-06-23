@@ -17,20 +17,19 @@ Hi, I'm **Sean Ferney**. I love building software that solves your problems and 
 ---
 
 
-When your needs change, you will want your code to change. 
-Thats why I make decisions now that will save time, money, and effort later.
+When your needs change, 
+I think your website should be able to change with you.
+Thats why I make decisions that will save you time, money, and effort.
 Its what I like to call **Code Karma**.
 
 
-Build good karma does not require anything fancy or complicated.
-- I ensure that we are solving the right problem
-by taking a little extra time to understand the clients needs. 
-- I avoid known pitfalls
-by spending a few minutes researching solutions.
-- I give my clients more options by
+1. I ensure that we are solving the right problem
+by taking a little extra time to understand your needs. 
+2. I give my clients more options by
 keeping my code maintainable
 and committing to good development practices.
-
+3. I avoid known pitfalls
+by spending a few minutes researching solutions.
 
 
 
