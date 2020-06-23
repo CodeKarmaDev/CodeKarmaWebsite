@@ -4,37 +4,43 @@
         display: grid
         align-self: center
     .group
+        transition: transform linear 100ms
+        transform-origin: 50% 100%
         & > *
             display: block
         label
             color: $mute
             line-height: 1em
             padding-bottom: 0.2em
+        & *:required
+            border-left-color: $focus2
+        
+        & *:focus 
+            color: $scribe
+            border-left-color: $focus
+
+        & *::placeholder
+            color: $mute
+            font-weight: bolder
+
+        &:focus-within, &:hover
+            transform: scale(1.01)
+
     .title
         margin-bottom: 1em
         color: $mute
 
-input, textarea
-    color: $scribe2
-    background-color: $fill2
-    border: $fill2 solid 2px
-    border-left: $mute solid 8px
-    padding: 0.8em 1.6em
-    outline: none
-    width: 100%
-    margin-bottom: 2rem
+    input, textarea
+        color: $scribe2
+        background-color: $fill2
+        border: $fill2 solid 2px
+        border-left: $mute solid 8px
+        padding: 0.8em 1.6em
+        outline: none
+        width: 100%
+        margin-bottom: 2rem
 
-    &:required
-        border-left-color: $focus2
-    
-    &:focus 
-        color: $scribe
-        border-left-color: $focus
 
-    &::placeholder
-        color: $mute
-        font-weight: bolder
-
-textarea
-    resize: none
-    height: 20vh
+    textarea
+        resize: none
+        height: 20vh

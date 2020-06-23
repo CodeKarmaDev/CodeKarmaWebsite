@@ -3,68 +3,66 @@ layout: root
 sendto: "https://formspree.io/moqkloak"
 ---
 
-<div class="{{ page.class }} contact bf fade-in-left x1">
-    <section class="page">
-        {{ content }}
+<section class="page bf fade-in-left x1 split-left">
+    {{ content }}
+</section>
 
-    </section>
-    <form
-        class="from grid"
-        action="{{ layout.sendto }}"
-        method="POST"
+
+<form
+    class="from grid split-right bf fade-in-left x1"
+    action="{{ layout.sendto }}"
+    method="POST"
+    >
+    
+    <h2 class="title">Contact</h2>
+
+    <input 
+        type="hidden" 
+        value="{{ page.subject }}"
+        name="_subject"
         >
-        
-        <h2 class="title">Contact</h2>
 
-        <input 
-            type="hidden" 
-            value="{{ page.subject }}"
-            name="_subject"
+    <div class="group">
+        <label
+            for="email"
+            >Email</label>
+        <input
+            required 
+            id="email"
+            type="text" 
+            name="_replyto"
+            placeholder="you@example.com"
             >
+    </div>
 
-        <div class="group">
-            <label
-                for="email"
-                >Email</label>
-            <input
-                required 
-                id="email"
-                type="text" 
-                name="_replyto"
-                placeholder="you@example.com"
-                >
-        </div>
+    <div class="group">
+        <label
+            for="reason"
+            >Reason</label>
+        <input
+            id="reason"
+            type="text" 
+            name="reason"
+            placeholder="Your purpose for contacting me."
+            >
+    </div>
 
-        <div class="group">
-            <label
-                for="reason"
-                >Reason</label>
-            <input
-                id="reason"
-                type="text" 
-                name="reason"
-                placeholder="Your purpose for contacting me."
-                >
-        </div>
+    <div class="group">
+        <label
+            for="message"
+            >Message</label>
+        <textarea
+            id="message"
+            required
+            name="message"
+            spellcheck="true"
+            wrap="hard"
+            placeholder="Your message"
+            ></textarea>
+    </div>
 
-        <div class="group">
-            <label
-                for="message"
-                >Message</label>
-            <textarea
-                id="message"
-                required
-                name="message"
-                spellcheck="true"
-                wrap="hard"
-                placeholder="Your message"
-                ></textarea>
-        </div>
 
-        <!-- your other form fields go here -->
-
-        <div class="group">
-            <button type="submit" class="link btn">Send</button>
-        </div>
-    </form>
-</div>
+    <div>
+        <button type="submit" class="link btn">Send</button>
+    </div>
+</form>

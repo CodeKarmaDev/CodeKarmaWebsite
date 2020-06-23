@@ -24,9 +24,13 @@
     & > :last-child
         margin-bottom: 5rem
 
+    .split-right, .split-right
+        grid-column: 2 / 3
 
-.contact
-    display: grid
+
+
+// .split
+//     display: grid
 
 @media screen and ( min-width: 75rem )
 
@@ -37,5 +41,7 @@
         & > *
             grid-column: 2 / 4
 
-    .contact
-        grid-template-columns: 1fr 1fr
+        .split-right
+            grid-column: 3 / 4
+        .split-left
+            grid-column: 2 / 3
