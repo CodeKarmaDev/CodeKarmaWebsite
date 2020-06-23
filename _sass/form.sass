@@ -1,0 +1,40 @@
+
+.from
+    &.grid
+        display: grid
+        align-self: center
+    .group
+        & > *
+            display: block
+        label
+            color: $mute
+            line-height: 1em
+            padding-bottom: 0.2em
+    .title
+        margin-bottom: 1em
+        color: $mute
+
+input, textarea
+    color: $scribe2
+    background-color: $fill2
+    border: $fill2 solid 2px
+    border-left: $mute solid 8px
+    padding: 0.8em 1.6em
+    outline: none
+    width: 100%
+    margin-bottom: 2rem
+
+    &:required
+        border-left-color: $focus2
+    
+    &:focus 
+        color: $scribe
+        border-left-color: $focus
+
+    &::placeholder
+        color: $mute
+        font-weight: bolder
+
+textarea
+    resize: none
+    height: 20vh
