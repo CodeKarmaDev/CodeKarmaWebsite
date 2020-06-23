@@ -1,46 +1,129 @@
+%spacing
+    margin-bottom: 1rem
+
+%text-field
+    @extend %spacing
+    // input:-webkit-autofill,
+    // input:-webkit-autofill:hover, 
+    // input:-webkit-autofill:focus,
+    // textarea:-webkit-autofill,
+    // textarea:-webkit-autofill:hover,
+    // textarea:-webkit-autofill:focus,
+    // select:-webkit-autofill,
+    // select:-webkit-autofill:hover,
+    // select:-webkit-autofill:focus 
+    //     border: 1px solid green
+    
+    transition: transform linear 50ms
+    transform-origin: 50% 100%
+    display: block
+    color: $scribe2
+    -webkit-text-fill-color: $scribe2
+    background-color: $fill2
+    -webkit-box-shadow: 0 0 0px 1000px $fill2 inset
+    border: $fill2 solid 2px
+    border-left: $mute solid 8px
+    padding: 0.8em 1.6em
+    outline: none
+    width: 100%
+
+    &:valid
+        background-color: $fill2
+
+    &:required
+        border-left-color: $focus2
+    
+    &:focus
+        color: $scribe
+        -webkit-text-fill-color: $scribe
+
+    &:focus, &:hover
+        border-left-color: $focus
+        transform: scale(1.01)
+
+    // &:blank
+    //     color: red
+
+    &::placeholder
+        -webkit-text-fill-color: $mute
+        color: $mute
+        font-weight: bolder
+
+%check
+    transition: transform linear 50ms
+    display: inline-block
+    outline: none
+    $size: 1.8em
+    width: $size
+    height: $size
+    -webkit-appearance: none
+    border-radius: $size / 2
+    background-color: $fill
+    border: $mute solid 4px
+    position: relative
+    top: $size / 4
+    left: -$size / 2
+
+
+    &:checked
+        background-color: $focus2
+        border: $focus2 double 2px
+    
+    &:checked:hover, &:checked:focus
+        background-color: $focus
+
+    &:hover, &:focus
+        border-color: $focus
+    &:hover
+        transform: scale(1.2)
+
 
 .from
+    .inline
+        display: grid
+        grid-auto-flow: column
+        grid-gap: 1em
     &.grid
         display: grid
         align-self: center
-    .group
-        transition: transform linear 100ms
-        transform-origin: 50% 100%
-        & > *
-            display: block
-        label
-            color: $mute
-            line-height: 1em
-            padding-bottom: 0.2em
-        & *:required
-            border-left-color: $focus2
-        
-        & *:focus
-            color: $scribe
+    label
+        color: $scribe2
 
-        & *:focus, &:hover *
-            border-left-color: $focus
+    label.check
+        padding-left: 1em
+        padding-bottom: 1em
+        color: $scribe2
 
-        & *::placeholder
-            color: $mute
-            font-weight: bolder
+    input[type="email"],
+    input[type="password"],
+    input[type="month"],
+    input[type="tel"],
+    input[type="week"],
+    input[type="url"],
+    input[type="search"],
+    input[type="text"], 
+    textarea, 
+    input[type="date"],
+    input[type="number"] 
+        @extend %text-field
 
-        &:focus-within, &:hover
-            transform: scale(1.01)
+
+    input[type="checkbox"],
+    input[type="radio"]
+        @extend %check
+    
+
+    // input[type="select"],
+    // input[type="color"],
+    // select,
+    // input[type="time"],
+    // input[type="submit"],
+    // input[type="file"],
+    // input[type="button"]
 
     .title
         margin-bottom: 1em
         color: $mute
-
-    input, textarea
-        color: $scribe2
-        background-color: $fill2
-        border: $fill2 solid 2px
-        border-left: $mute solid 8px
-        padding: 0.8em 1.6em
-        outline: none
-        width: 100%
-        margin-bottom: 2rem
 
 
     textarea

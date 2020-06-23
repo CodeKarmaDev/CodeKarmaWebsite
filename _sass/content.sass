@@ -5,6 +5,7 @@ $minh: 10rem
 .content
     display: grid
     // position: relative
+    padding-bottom: 8rem
 
     grid-template-columns: minmax(0, 1fr) repeat( 1, minmax(auto, 20fr)) minmax(0, 1fr)
     grid-template-rows: 20vh minmax(10rem, auto)
@@ -22,8 +23,7 @@ $minh: 10rem
     .hero, footer
         align-self: center
     
-    & > :last-child
-        margin-bottom: $minh
+    // & > :last-child
 
     .split-right, .split-right
         grid-column: 2 / 3

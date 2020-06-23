@@ -1,0 +1,66 @@
+---
+layout: root
+anim:  'bf fade-in-left x1'
+---
+
+
+
+<form
+    class="from grid split-left {{ layout.anim }}"
+    action="{{ page.sendto }}"
+    method="POST"
+    >
+    
+
+    <h2>Request an Estimate</h2>
+
+    {% include form-email.html %}
+
+    <input
+        id="reason"
+        type="hidden" 
+        name="reason"
+        placeholder="Estimate"
+        >
+    
+    <div class="inline">
+        {% include form-budget.html %}
+        {% include form-timeline.html %}
+    </div>
+
+
+    <div class="group">
+        <label
+            class="check"
+            for="existing-code-base"
+            ><input
+                type="checkbox"
+                name="existing-code-base"
+                >Does your project have an existing codebase?</label>
+    </div>
+    
+    <div class="group">
+        <label
+            for="technologies"
+            >Required Technologies</label>
+        <input
+            multiple
+            type="text" 
+            name="technologies"
+            placeholder="ie. Ruby on Rails, Angular, RSpec" 
+            id="technologies" 
+            class="small"
+            >    
+    </div>
+    
+    {% include form-details.html %}
+
+
+    <div>
+        <button type="submit" class="link btn">Send</button>
+    </div>
+</form>
+
+<section class="page {{ layout.anim }} split-right space-left">
+    {{ content }}
+</section>
