@@ -5,4 +5,4 @@ permalink: /contact/
 subject: Code Karma Generic Contact
 ---
 
-contact me for xxx
+picture here

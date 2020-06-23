@@ -3,37 +3,17 @@ layout: root
 sendto: "https://formspree.io/moqkloak"
 ---
 
-<section class="page bf fade-in-left x1 split-left">
-    {{ content }}
-</section>
 
 
 <form
-    class="from grid split-right bf fade-in-left x1"
+    class="from grid split-left bf fade-in-left x1"
     action="{{ layout.sendto }}"
     method="POST"
     >
     
     <h2 class="title">Contact</h2>
 
-    <input 
-        type="hidden" 
-        value="{{ page.subject }}"
-        name="_subject"
-        >
-
-    <div class="group">
-        <label
-            for="email"
-            >Email</label>
-        <input
-            required 
-            id="email"
-            type="text" 
-            name="_replyto"
-            placeholder="you@example.com"
-            >
-    </div>
+    {% include form-email.html %}
 
     <div class="group">
         <label
@@ -47,22 +27,13 @@ sendto: "https://formspree.io/moqkloak"
             >
     </div>
 
-    <div class="group">
-        <label
-            for="message"
-            >Message</label>
-        <textarea
-            id="message"
-            required
-            name="message"
-            spellcheck="true"
-            wrap="hard"
-            placeholder="Your message"
-            ></textarea>
-    </div>
-
+    {% include form-message.html %}
 
     <div>
         <button type="submit" class="link btn">Send</button>
     </div>
 </form>
+
+<section class="page bf fade-in-left x1 split-right">
+    {{ content }}
+</section>

@@ -15,8 +15,10 @@
         & *:required
             border-left-color: $focus2
         
-        & *:focus 
+        & *:focus
             color: $scribe
+
+        & *:focus, &:hover *
             border-left-color: $focus
 
         & *::placeholder
@@ -43,4 +45,4 @@
 
     textarea
         resize: none
-        height: 20vh
+        height: 25vh
