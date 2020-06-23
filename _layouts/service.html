@@ -1,14 +1,21 @@
 ---
 layout: root
+anim:  'bf fade-in-left x1'
 back: /services/
 ---
 
-<section class="{{ page.class }} page bf fade-in-left x1">
+<section class="{{ page.class }} {{ layout.anim }} split-right relative">
 
     {% include back.html %}
 
-    {{ page.title }}
+    
+    {% assign service = page %}
+    {% include service.html %}
+
+</section>
+
+<section class="{{ page.class }} {{ layout.anim }} split-left relative page">
 
     {{ content }}
-
+    
 </section>

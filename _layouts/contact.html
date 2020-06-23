@@ -1,12 +1,13 @@
 ---
 layout: root
+anim:  'bf fade-in-left x1'
 sendto: "https://formspree.io/moqkloak"
 ---
 
 
 
 <form
-    class="from grid split-left bf fade-in-left x1"
+    class="from grid split-left {{ layout.anim }}"
     action="{{ layout.sendto }}"
     method="POST"
     >
@@ -34,6 +35,6 @@ sendto: "https://formspree.io/moqkloak"
     </div>
 </form>
 
-<section class="page bf fade-in-left x1 split-right">
+<section class="page {{ layout.anim }} split-right">
     {{ content }}
 </section>

@@ -67,6 +67,7 @@ defaults:
       path: "_services"
     values:
       layout: 'service'
+      action: Details
 
 
 collections:
