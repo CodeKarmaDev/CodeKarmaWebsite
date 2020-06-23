@@ -63,6 +63,10 @@ defaults:
       path: ""
     values:
       layout: 'main'
+  - scope:
+      path: "_services"
+    values:
+      layout: 'service'
 
 
 collections:

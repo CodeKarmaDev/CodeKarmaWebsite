@@ -1,10 +1,10 @@
 ---
 title: Complex Website
-price: "10,000"
+price: "15,000"
 slug: complex
 per: Minimum
 description: "
-This is the minimum for a website that requires users, a database, or an api.
+This is my minimum for any website that requires users, a database, or an api.
 
 
 "
