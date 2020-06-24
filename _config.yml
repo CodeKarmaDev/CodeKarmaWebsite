@@ -72,5 +72,5 @@ defaults:
 
 collections:
   services:
-    output: true
+    output: false
     permalink: /:collection/:title

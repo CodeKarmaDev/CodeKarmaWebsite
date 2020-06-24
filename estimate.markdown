@@ -6,4 +6,3 @@ subject: Code Karma | Estimate Request
 sendto: "https://formspree.io/xwkrqdww"
 ---
 
-## Get an Estimate

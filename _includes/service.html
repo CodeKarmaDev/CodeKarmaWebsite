@@ -14,19 +14,19 @@
     </div>
     <span class="per">{{service.per}}</span>
 
-    {% if page.slug != service.slug %}
-        <div class="description">
-            {{ service.description | markdownify }}
-        </div>
+    <!-- {% if page.slug != service.slug %} -->
+    <div class="description">
+        {{ service.description | markdownify }}
+    </div>
 
 
-        <div class="action">
+        <!-- <div class="action">
             <a 
                 class="link" 
                 href="/services/{{ service.slug }}/" 
                 >{{ service.action }}</a>
 
-        </div>
-    {% endif %}
+        </div> -->
+    <!-- {% endif %} -->
 
 </div>

@@ -11,10 +11,15 @@ anim:  'bf fade-in-left x1'
     method="POST"
     >
     
+    <div class="inline">
+        <h2>Request an Estimate</h2>
+        <div class="justify-right">
+            <button type="submit" class="link btn">Send</button>
 
-    <h2>Request an Estimate</h2>
+        </div>
 
-    {% include form-email.html %}
+    </div>
+
 
     <input
         id="reason"
@@ -23,23 +28,16 @@ anim:  'bf fade-in-left x1'
         placeholder="Estimate"
         >
     
+    {% include form-email.html %}
+    
+    {% include form-details.html %}
+
+    
     <div class="inline">
         {% include form-budget.html %}
         {% include form-timeline.html %}
     </div>
 
-
-    <div class="group">
-        <label
-            class="check"
-            for="existing-code-base"
-            ><input
-                type="checkbox"
-                name="existing"
-                value="Has an existing codebase"
-                >Does your project have an existing codebase?</label>
-    </div>
-    
     <div class="group">
         <label
             for="technologies"
@@ -53,13 +51,23 @@ anim:  'bf fade-in-left x1'
             class="small"
             >    
     </div>
-    
-    {% include form-details.html %}
 
-
-    <div>
-        <button type="submit" class="link btn">Send</button>
+    <div class="group">
+        <label
+            class="check"
+            for="existing-code-base"
+            ><input
+                type="checkbox"
+                name="existing"
+                value="Has an existing codebase"
+                >Does your project have an existing codebase?</label>
     </div>
+    
+
+    
+    <!-- <div>
+        <button type="submit" class="link btn">Send</button>
+    </div> -->
 </form>
 
 <section class="page {{ layout.anim }} split-right space-left">
