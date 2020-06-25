@@ -21,7 +21,14 @@ Hi, I'm **Sean Ferney**. I love building software that solves your problems and 
 ok what does my homepage need to do:
 - call to action to see my services
 - call to action to get estimate
-- call to action see my portfolio | later
+- call to action see my portfolio ( add a portfolio pointed at github projects)
+
+- testimonial
+
+- define some skills / experience
+
+- sell them the idea i will produce a higher quality product.
+- education them about what makes a good website.
  
 
 

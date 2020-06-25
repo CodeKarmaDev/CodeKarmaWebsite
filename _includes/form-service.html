@@ -1,0 +1,19 @@
+<div class="group">
+    <label 
+        for="scale"
+        >Desired Service</label>
+
+    <select 
+        name="scale"
+        id="scale"
+        >
+
+        {% assign services = site.services | sort: 'order' %}
+        {% for service in services %}
+            <option value="{{ service.title}}">{{ service.title }}</option>
+        {% endfor %}
+        <option value="any">Any</option>
+        <option selected value="N/A">--select--</option>
+    </select>
+
+</div>
