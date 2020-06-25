@@ -11,7 +11,8 @@ anim:  'bf fade-in-left x1'
     method="POST"
     >
     
-    <h2 class="title">Contact</h2>
+    <!-- <h2>{{page.title}}</h2> -->
+    {% include form-title.html %}
 
     {% include form-email.html %}
 
@@ -29,9 +30,9 @@ anim:  'bf fade-in-left x1'
 
     {% include form-message.html %}
 
-    <div>
+    <!-- <div>
         <button type="submit" class="link btn">Send</button>
-    </div>
+    </div> -->
 </form>
 
 <section class="page {{ layout.anim }} split-right">

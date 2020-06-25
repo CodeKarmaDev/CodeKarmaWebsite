@@ -18,6 +18,14 @@ Hi, I'm **Sean Ferney**. I love building software that solves your problems and 
 ---
 
 
+ok what does my homepage need to do:
+- call to action to see my services
+- call to action to get estimate
+- call to action see my portfolio | later
+ 
+
+
+
 When your needs change, 
 I think your website should be able to change with you.
 Thats why I make decisions that will save you time, money, and effort.
