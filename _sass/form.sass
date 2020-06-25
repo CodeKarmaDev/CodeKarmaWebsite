@@ -1,73 +1,94 @@
 %spacing
     margin-bottom: 1rem
 
-%text-field
-    @extend %spacing
-    // input:-webkit-autofill,
-    // input:-webkit-autofill:hover, 
-    // input:-webkit-autofill:focus,
-    // textarea:-webkit-autofill,
-    // textarea:-webkit-autofill:hover,
-    // textarea:-webkit-autofill:focus,
-    // select:-webkit-autofill,
-    // select:-webkit-autofill:hover,
-    // select:-webkit-autofill:focus 
-    //     border: 1px solid green
-    
+
+%field
+    display: block
+    background-color: $fill2
     transition: transform linear 50ms
     transform-origin: 50% 100%
-    display: block
-    color: $scribe2
     -webkit-text-fill-color: $scribe2
-    background-color: $fill2
     -webkit-box-shadow: 0 0 0px 1000px $fill2 inset
-    border: $fill2 solid 2px
-    border-left: $mute solid 8px
+    color: $mute
     padding: 0.8em 1.6em
     outline: none
     width: 100%
-
+    
+    
+    border: $fill2 solid 1px
+    
     &:valid
         background-color: $fill2
+    
+    
+    &:defined
+        font-weight: normal
+
+        color: $scribe2
+
+    &:focus, &:hover
+        transform: scale(1.01)
+        color: $scribe
+        -webkit-text-fill-color: $scribe
+    
+    // &::placeholder
+    //     -webkit-text-fill-color: $mute
+    //     color: $mute
+
+%box
+    @extend %field, %spacing
+    -moz-appearance: none
+    border: $mute solid 1px
+    border-right-width: 8px
+
+    &:required
+        border-color: $focus2
+    
+    &:focus, &:hover
+        border-color: $focus
+
+
+%text-field
+    @extend %field, %spacing
+    
+    border-left: $mute solid 8px
 
     &:required
         border-left-color: $focus2
     
-    &:focus
-        color: $scribe
-        -webkit-text-fill-color: $scribe
-
     &:focus, &:hover
         border-left-color: $focus
-        transform: scale(1.01)
 
-    // &:blank
-    //     color: red
-
-    &::placeholder
-        -webkit-text-fill-color: $mute
-        color: $mute
-        font-weight: bolder
 
 %check
     transition: transform linear 50ms
     display: inline-block
     outline: none
+    $border: 4px
     $size: 1.8em
     width: $size
     height: $size
     -webkit-appearance: none
-    border-radius: $size / 2
+    border-radius: $size / 4
     background-color: $fill
-    border: $mute solid 4px
+    border: $mute solid $border
     position: relative
-    top: $size / 4
-    left: -$size / 2
+    margin-right: 100%
 
+    &:before
+        top: -$border
+        left: $size
+        white-space: nowrap
+        width: auto
+        word-wrap: none
+        position: absolute
+        color: $scribe2
+        font-size: 1.1rem
+        content: attr(data-label)
 
     &:checked
         background-color: $focus2
-        border: $focus2 double 2px
+        border-color: $focus2
     
     &:checked:hover, &:checked:focus
         background-color: $focus
@@ -75,7 +96,7 @@
     &:hover, &:focus
         border-color: $focus
     &:hover
-        transform: scale(1.2)
+        transform: scale(1.08)
 
 
 .from
@@ -103,17 +124,20 @@
     input[type="search"],
     input[type="text"], 
     textarea, 
-    input[type="date"],
-    input[type="number"] 
         @extend %text-field
 
 
     input[type="checkbox"],
     input[type="radio"]
         @extend %check
+
+    input[type="number"], 
+    input[type="select"],
+    input[type="date"],
+    select
+        @extend %box
     
 
-    // input[type="select"],
     // input[type="color"],
     // select,
     // input[type="time"],

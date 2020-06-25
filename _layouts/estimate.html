@@ -10,24 +10,8 @@ anim:  'bf fade-in-left x1'
     action="{{ page.sendto }}"
     method="POST"
     >
-    
-    <!-- <div class="inline">
-        <h2>Request an Estimate</h2>
-        <div class="justify-right">
-            <button type="submit" class="link btn">Send</button>
-
-        </div>
-
-    </div> -->
 
     {% include form-title.html %}
-
-    <input
-        id="reason"
-        type="hidden" 
-        name="reason"
-        placeholder="Estimate"
-        >
     
     {% include form-email.html %}
     
@@ -37,6 +21,7 @@ anim:  'bf fade-in-left x1'
     <div class="inline">
         {% include form-budget.html %}
         {% include form-timeline.html %}
+        {% include form-size.html %}
     </div>
 
     <div class="group">
@@ -53,22 +38,10 @@ anim:  'bf fade-in-left x1'
             >    
     </div>
 
-    <div class="group">
-        <label
-            class="check"
-            for="existing-code-base"
-            ><input
-                type="checkbox"
-                name="existing"
-                value="Has an existing codebase"
-                >Does your project have an existing codebase?</label>
-    </div>
+
+    {% include form-questions.html %}
     
 
-    
-    <!-- <div>
-        <button type="submit" class="link btn">Send</button>
-    </div> -->
 </form>
 
 <section class="page {{ layout.anim }} split-right space-left">
