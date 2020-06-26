@@ -1,0 +1,23 @@
+---
+layout: root
+anim:  'bf fade-in-left x1'
+---
+
+<section class="{{ page.class }} page {{ layout.anim }}">
+    {{ content }}
+</section>
+
+<div>
+    <div class="link-row">
+        <a 
+            href="{% link contact/index.markdown %}"
+            class="link btn"
+            >Contact Me</a>
+        
+            <a 
+            href="{% link skills/index.markdown %}"
+            class="link btn"
+            >My Skills</a>
+    </div>
+</div>
+

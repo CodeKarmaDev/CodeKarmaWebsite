@@ -1,7 +1,7 @@
 ---
 layout: estimate
 title: Request an Estimate
-permalink: /estimate/
+permalink: contact/estimate/
 subject: Code Karma | Estimate Request
 sendto: "https://formspree.io/xwkrqdww"
 ---

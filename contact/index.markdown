@@ -19,6 +19,9 @@ or email me directly with
 I am also active on [{{ linkedin.name }}]({{linkedin.href}}).
 
 
-Perhaps you would like to [request an estimate]({% link estimate.markdown %}).
+Perhaps you would like to [request an estimate]({% link contact/estimate.markdown %}).
 
 
+- contact me
+- get an estimate 
+- schedule a call/meeting.

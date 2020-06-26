@@ -2,11 +2,18 @@
 - title: Home
   href: /
 
-- title: Services
-  href: '/services/'
+# - title: Services
+#   href: '/services/'
 
-- title: Estimate
-  href: '/estimate/'
+# - title: Estimate
+#   href: '/contact/estimate/'
+
+
+- title: Skills
+  href: '/skills/'
+
+- title: Work
+  href: '/work/'
 
 - title: Contact
   href: '/contact/'
