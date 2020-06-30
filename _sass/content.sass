@@ -12,7 +12,7 @@ $minh: 10rem
     grid-auto-rows: auto
 
     &.spacer
-        grid-template-rows: 40vh minmax(60vh, auto)
+        grid-template-rows: 40vh 60vh
 
 
     min-height: 100vh
@@ -35,6 +35,9 @@ $minh: 10rem
     .content
         grid-template-columns: minmax(0, 1fr) minmax(auto, 2fr) minmax(auto, 1fr) minmax(0, 1fr)
         grid-template-rows: 15vh
+    
+        // &.spacer
+        //     grid-template-rows: 40vh minmax(60vh, auto)
         
         & > *
             grid-column: 2 / 4

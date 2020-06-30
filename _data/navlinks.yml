@@ -9,11 +9,11 @@
 #   href: '/contact/estimate/'
 
 
-- title: Skills
-  href: '/skills/'
+# - title: Skills
+#   href: '/skills/'
 
-- title: Work
-  href: '/work/'
+- title: Experience
+  href: '/experience/'
 
 - title: Contact
   href: '/contact/'

@@ -1,0 +1,9 @@
+<div class="item">
+    <a id="{{ anItem.title | slugify }}"></a>
+    
+    <h2>
+        {{ anItem.title }}
+    </h2>
+
+    {{ anItem.content | markdownify }}
+</div>
