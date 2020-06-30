@@ -1,0 +1,19 @@
+---
+layout: root
+anim:  'bf fade-in-left x1'
+---
+
+
+{% assign skills = site.skills | sort: 'order' %}
+{% for skill in skills %}
+
+    <section class="{{ page.class }} {{ layout.anim }}">
+        <h2>
+            {{ skill.title }}
+        </h2>
+        
+        {{ skill.content | markdownify }}
+
+    </section>
+
+{% endfor %}

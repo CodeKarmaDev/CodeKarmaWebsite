@@ -4,6 +4,7 @@ title: Contact
 permalink: /contact/
 subject: Code Karma | Contact
 sendto: "https://formspree.io/moqkloak"
+accepting-work: true
 ---
 
 {% assign email =  site.data.social | find: 'name', 'Email' %}
@@ -17,11 +18,3 @@ or email me directly with
 
 
 I am also active on [{{ linkedin.name }}]({{linkedin.href}}).
-
-
-Perhaps you would like to [request an estimate]({% link contact/estimate.markdown %}).
-
-
-- contact me
-- get an estimate 
-- schedule a call/meeting.
