@@ -8,6 +8,11 @@ spacer: true
 title: Sean Ferney
 permalink: /
 hero: true
+actions:
+- name: Contact Me
+  url: /contact/
+- name: My Resume
+  url: /resume/
 ---
 
 Hi, I'm **Sean Ferney**, a full-stack web developer who loves to build software that makes money and solves problems.

@@ -1,0 +1,8 @@
+
+{% for action in page.actions %}
+    <a 
+        href="{{ action.url }}"
+        class="link btn"
+        >{{ action.name }}</a>
+    
+{% endfor %}
