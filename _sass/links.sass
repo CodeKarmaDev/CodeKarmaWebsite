@@ -6,8 +6,10 @@ $link-hover: -3px
     
 %float
     transition: transform 50ms ease-out
+    transform-origin: 50% 100%
     &:hover, &:active, &:focus
-        transform: translateY($link-hover)
+        transform: scale(1.05)
+        // transform: translateY($link-hover)
 
 %underline
     position: relative
@@ -38,7 +40,8 @@ a.mute, .mute a
 
 .no-float
     &:hover, &:active, &:focus
-        transform: translateY(0)
+        transform: scale(1)
+        // transform: translateY(0)
 
 
 

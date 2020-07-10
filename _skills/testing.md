@@ -1,12 +1,12 @@
 ---
 title: Testing
-order: 1
+order: 1.1
 ---
 
 
 Good testing practices are very important to me.
-I have seen both sides of the coin, and the tested side is mush better.
+I have worked in large projects with and without testing frameworks. 
+The tested side way better.
 
-- Rspec
-- PhpUnit
-- Cucumber - Gherkin
+I have done plenty of unit and feature testing with Rspec, PhpUnit, Capybara, and Cucumber.
+

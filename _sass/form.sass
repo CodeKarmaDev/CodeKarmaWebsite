@@ -16,6 +16,7 @@
     
     
     border: $fill2 solid 1px
+    border-radius: 2px
     
     &:valid
         background-color: $fill2
@@ -27,13 +28,11 @@
         color: $scribe2
 
     &:focus, &:hover
-        transform: scale(1.01)
+        // transform: scale(1.01)
         color: $scribe
         -webkit-text-fill-color: $scribe
+        box-shadow: 0 0 3px $focus
     
-    // &::placeholder
-    //     -webkit-text-fill-color: $mute
-    //     color: $mute
 
 %box
     @extend %field, %spacing
@@ -100,6 +99,10 @@
 
 
 .from
+    .group
+        line-height: 1em
+        padding-bottom: 1rem
+
     .inline
         display: grid
         grid-auto-flow: column

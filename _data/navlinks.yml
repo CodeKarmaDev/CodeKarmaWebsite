@@ -12,11 +12,14 @@
 # - title: Skills
 #   href: '/skills/'
 
-- title: Portfolio
-  href: '/portfolio/'
-  
-- title: Experience
-  href: '/experience/'
+# - title: Portfolio
+#   href: '/portfolio/'
+
+- title: Resume
+  href: '/resume/'
+
+- title: Skills
+  href: '/skills/'
 
 - title: Contact
   href: '/contact/'

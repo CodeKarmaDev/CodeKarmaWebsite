@@ -3,11 +3,11 @@ layout: root
 anim:  'bf fade-in-left x1'
 ---
 
-<section class="{{ page.class }} page {{ layout.anim }}">
-    {{ content }}
-</section>
 
-<div>
+<div class="hero {{ layout.anim }}">
+    {{ content }}
+    
+    
     <div class="link-row">
         <a 
             href="{% link contact/index.markdown %}"
