@@ -1,11 +1,14 @@
 ---
-title: Tools & Software
-order: 2
+user: seanferney
+order: 3
 ---
 
+
+### Software
+
 - Linux
-- Git
 - Adobe Premiere
 - Photoshop - GIMP - Krita
 - Illustrator - Inkscape
+- Git
 - Blender
