@@ -1,0 +1,42 @@
+---
+layout: root
+anim:  'bf fade-in-left x1'
+---
+
+<main class="summery {{ page.class }} page resume {{ layout.anim }}">
+    <h2>Summery</h2>
+    {{ content }}
+
+</main>
+
+<section class="work-history resume split-left {{ page.class }} {{ layout.anim }}">
+    
+    <h2>Work History</h2>
+
+    <div class="rows">
+
+        {% assign myJobs = site.jobs | sort: 'end' | reverse %}
+        {% for job in myJobs %}
+            <div class="job">    
+                <h3 class="title">{{ job.company }} - {{ job.title }}</h3>
+
+                <div class="business flex">
+                    <address class="mute">{{job.location}}</address>
+
+                    <span class="mute span">
+                        <time>{{ job.start | date: "%b %Y" }}<time>
+                            - 
+                        <time>{{ job.end | date: "%b %Y"  }}<time>
+                    </span>
+                </div>
+
+                {{ job.content | markdownify }}
+            </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+<section class=" resume skills split-right {{ page.class }} {{ layout.anim }}">
+    <h2>Skills</h2>
+</section>

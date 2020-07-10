@@ -76,3 +76,5 @@ collections:
     permalink: /:collection/:title
   skills:
     output: false
+  jobs:
+    output: false
