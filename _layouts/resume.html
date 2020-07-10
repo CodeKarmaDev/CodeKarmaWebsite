@@ -39,4 +39,13 @@ anim:  'bf fade-in-left x1'
 
 <section class=" resume skills split-right {{ page.class }} {{ layout.anim }}">
     <h2>Skills</h2>
+        <div class="rows">
+            {% assign mySkills = site.skills | sort: 'order' %}
+            {% for skill in mySkills %}
+                <div>
+                    {{ skill.content | markdownify }}
+                </div>
+            {% endfor %}
+
+        </div>
 </section>

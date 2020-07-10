@@ -4,17 +4,13 @@ order: 2
 ---
 
 
-### Languages & Frameworks
+### Languages
 
-- Ruby on Rails - Ruby
-- Postgress - SQL
-- Middleman - Ruby
-- Rspec - Ruby
-- Laravel - php
-- Phpunit - php
-- Godot - GDScript
-- Angular - TypeScript
-- Vue - JavaScript
+- Ruby
+- PostgreSQL- SQL
+- php
+- GDScript
+- TypeScript - JavaScript
 - Bash
 - Python
 - Html

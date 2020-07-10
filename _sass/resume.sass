@@ -1,10 +1,13 @@
 
-$rowspace: 6rem
+$rowspace: 4rem
 $colspace: 2rem
-.resume.work-history
+
+.resume
+    ul, ol
+        padding-top: 1rem
 
     & > h2
-        margin-bottom: $rowspace
+        margin-bottom: $rowspace / 2
 
     .rows
         display: grid
@@ -17,12 +20,14 @@ $colspace: 2rem
     .flex > *
         margin-right: 1.5rem
 
-    .job
-        p + ul, p + ol
-            padding-top: 1rem
-
 
 .resume.skills
-    margin-left: $colspace 
+    margin-left: $colspace
+
+.resume.summery
+    p
+        max-width: $text-width
+        margin: 2rem 0 1rem 2rem
+
 
 

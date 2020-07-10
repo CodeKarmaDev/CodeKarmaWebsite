@@ -18,8 +18,8 @@
 - title: Resume
   href: '/resume/'
 
-- title: Skills
-  href: '/skills/'
+# - title: Skills
+#   href: '/skills/'
 
 - title: Contact
   href: '/contact/'
