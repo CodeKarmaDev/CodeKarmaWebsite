@@ -15,7 +15,7 @@
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="Icon.svg">
+   sodipodi:docname="icon.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="139.46273"
-     inkscape:cy="69.234432"
+     inkscape:cx="-1.2515157"
+     inkscape:cy="67.820218"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,8 +66,18 @@
      id="layer1"
      transform="translate(0,-75.249988)">
     <path
-       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-variant-east_asian:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 0 0 L 0 32 L 64 0 L 0 0 z M 128 0 L 0 64 L 0 128 L 128 192 L 192 192 L 192 160 L 64 96 L 192 32 L 192 0 L 128 0 z M 129.41602 6 L 166.58203 6 L 6 86.291016 L 6 67.708984 L 129.41602 6 z M 25.417969 102 L 62.583984 102 L 186 163.70898 L 186 182.29102 L 25.417969 102 z M 0 160 L 0 192 L 64 192 L 0 160 z "
+       style="fill:#5d9b95;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-variant-east_asian:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 0,0 V 32 L 64,0 Z"
+       transform="translate(0,75.249988)"
+       id="path5077" />
+    <path
+       style="fill:#70d665;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-variant-east_asian:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 128 0 L 0 64 L 0 128 L 128 192 L 192 192 L 192 160 L 64 96 L 192 32 L 192 0 L 128 0 z M 129.41602 6 L 166.58203 6 L 6 86.291016 L 6 67.708984 L 129.41602 6 z M 25.417969 102 L 62.583984 102 L 186 163.70898 L 186 182.29102 L 25.417969 102 z "
+       transform="translate(0,75.249988)"
+       id="path5075" />
+    <path
+       style="fill:#5d9b95;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-variant-east_asian:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 0,160 v 32 h 64 z"
        transform="translate(0,75.249988)"
        id="path1433" />
   </g>
