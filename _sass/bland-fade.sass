@@ -7,15 +7,9 @@ $default-delay: 0s
 $delay: 1s
 
 .bland-fade, .bfade, .bf, .blandf
-    @extend %fades, %slides,  %fade-and-slide, %speeds, %delays
+    // @extend %fades, %slides, %fade-and-slide, %speeds, %delays
 
-%fade-in
-    opacity: 1
-
-%fade-out
-    opacity: 0
-
-%fades
+    //%fades
     &.fade-out
         @extend %fade-out
         animation: $speed linear $default-delay anim-fade-out
@@ -35,8 +29,7 @@ $delay: 1s
         100%
             opacity: 0
 
-%slides
-
+    // %slides
     @keyframes anim-slide-down
         0%
             transform: translateY(0)
@@ -61,7 +54,7 @@ $delay: 1s
         100%
             transform: translateX($dist)
 
-%fade-and-slide
+    // %fade-and-slide
     &.fade-out-left
         @extend %fade-out
         animation: $speed ease-out $default-delay anim-slide-right, $speed linear $default-delay anim-fade-out
@@ -94,7 +87,7 @@ $delay: 1s
         @extend %fade-in
         animation: $speed ease-out $default-delay anim-slide-down, $speed linear $default-delay anim-fade-in
 
-%speeds
+    // %speeds
     &.x4
         $s: $speed / 5
         animation-duration: $s, $s
@@ -120,7 +113,7 @@ $delay: 1s
         $s: $speed * 5
         animation-duration: $s, $s
 
-%delays
+    // %delays
     &.d1
         $d: $delay * 1
         animation-delay: $d, $d
@@ -138,3 +131,8 @@ $delay: 1s
         animation-delay: $d, $d
 
     
+%fade-in
+    opacity: 1
+
+%fade-out
+    opacity: 0
