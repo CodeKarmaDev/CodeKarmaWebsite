@@ -12,8 +12,8 @@ accepting_work: true
 
 You can also
 email me directly
-[{{ email.user }}](mailto:{{ email.href }}),
-or get in touch with [{{ linkedin.name }}]({{linkedin.href}}).
+[{{ site.email }}](mailto:{{ site.email }}),
+or get in touch with [ {{ site.linkedin }} ](https://www.linkedin.com/in/{{ site.linkedin }}/).
 
 <!-- {% if page.accepting_work %}
 I am currently accepting freelance work.
