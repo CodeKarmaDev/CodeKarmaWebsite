@@ -1,7 +1,17 @@
 
 @import colors
 
-        
+.site-logo
+    max-width: 50vw
+    max-height: 20vh
+
+.site-title
+
+    grid-column: 2 / 3
+    grid-row: 1 / 2
+    align-self: center
+    justify-self: end
+    z-index: 2
 
 
 header
@@ -10,27 +20,18 @@ header
     h3
         padding: 0
 
-    .subtitle
-        grid-column: 2 / 3
-        grid-row: 1 / 2
-        align-self: center
-        justify-self: end
-        z-index: 2
-        
-    nav
-        display: grid
-        grid-auto-flow: column
-        grid-row: repeat( auto-fit, minmax(250px, 1fr) )
-        align-self: end
-        justify-self: end
-        grid-column: 1 / 3
-        grid-gap: 2rem
 
-    .logo
-        $offset: -2rem
-        width: 20rem
-        margin-bottom: $offset
-        margin-left: $offset
+        
+    // nav
+    //     display: grid
+    //     grid-auto-flow: column
+    //     grid-row: repeat( auto-fit, minmax(250px, 1fr) )
+    //     align-self: end
+    //     justify-self: end
+    //     grid-column: 1 / 3
+    //     grid-gap: 2rem
+
+
 
 @media screen and ( min-width: 60rem )
     header
