@@ -20,7 +20,7 @@ Hi, I'm **Sean Ferney**, a full-stack web developer who loves to build software 
 
 # **USER FOCUSED** WEBSITES
 
-## Beautiful, Effective, Maintainable
+## _Beautiful, Effective, Maintainable_
 
 <!-- One thing that stands out about me, 
 is that I love to learn. 

@@ -1,45 +1,42 @@
 
 
-strong
-    font-weight: bold
-    color: $scribe
-
 body
-    font-size: $font-size
-    font-family: 'Fira Sans', sans-serif
-    line-height: 2.5em
-    color: $scribe
-
-button
-    font-size: $font-size
+    line-height: 2.5
 
 h1
-    font-size: 4.8rem
-    color: $scribe
+    font-size: get-size('900')
 h2
-    font-size: 2.4rem
+    font-size: get-size('700')
 h3
-    font-size: 1.8rem
+    font-size: get-size('600')
 
-h1, h2, h3, h4, h5, h6
-    color: $scribe2
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6
+    line-height: 1
     font-weight: normal
-    max-width: 30em
-    line-height: 1em
 
     strong
-        color: $focus
-ul, ol
-    line-height: 2em
+        color: get-color('green')
+    em
+        color: get-color('gray-light')
+        font-style: normal
 
-.mute
-    color: $mute
 
-.shadow
-    color: $fill2
+// ul, ol
+//     line-height: 2em
 
-p
-    max-width: $text-width
+// .mute
+//     color: $mute
+
+// .shadow
+//     color: $fill2
+
+// p
+//     max-width: $text-width
 
 
     

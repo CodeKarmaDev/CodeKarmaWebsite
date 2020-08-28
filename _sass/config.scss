@@ -30,8 +30,10 @@ $gorko-size-scale: (
 ///
 $gorko-colors: (
   'dark': $black,
+  'gray-dark': $gray-1,
+  'mute': $gray-2,
   'light': $white,
-  'mute': $mute,
+  'gray-light': $gray-3,
   'green': $green,
   'teal': $teal
 );
@@ -63,61 +65,10 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': 'Helvetica, Arial, sans-serif'
+      'base': 'Fira Sans, sans-serif'
     ),
     'output': 'standard',
     'property': 'font-family'
-  ),
-  'gap-top': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'margin-top'
-  ),
-  'gap-right': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'margin-right'
-  ),
-  'gap-bottom': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'margin-bottom'
-  ),
-  'gap-left': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'margin-left'
-  ),
-  'pad-top': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'padding-top'
-  ),
-  'pad-right': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'padding-right'
-  ),
-  'pad-bottom': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'padding-bottom'
-  ),
-  'pad-left': (
-    'items': $gorko-size-scale,
-    'output': 'standard',
-    'property': 'padding-left'
-  ),
-  'stack': (
-    'items': (
-      '300': 0,
-      '400': 10,
-      '500': 20,
-      '600': 30,
-      '700': 40
-    ),
-    'output': 'standard',
-    'property': 'z-index'
   ),
   'text': (
     'items': $gorko-size-scale,
