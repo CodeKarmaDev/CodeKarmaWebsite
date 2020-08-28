@@ -1,0 +1,23 @@
+{
+  "name": "codekarmawebsite",
+  "version": "1.0.0",
+  "description": "This is the primary website for code karma.",
+  "main": "index.js",
+  "dependencies": {
+    "gorko": "^0.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeKarmaDev/CodeKarmaWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeKarmaDev/CodeKarmaWebsite/issues"
+  },
+  "homepage": "https://github.com/CodeKarmaDev/CodeKarmaWebsite#readme"
+}

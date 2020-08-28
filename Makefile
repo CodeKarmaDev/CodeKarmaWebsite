@@ -5,11 +5,11 @@ JEKYLL := bundle exec jekyll
 NPM := npm
 
 
-.PHONY: default build serve setup
+.PHONY: default build serve sync
 
 default: serve
 
-setup:
+sync:
 	rvm install $(RUBY_VERSION)
 	rvm use $(RUBY_VERSION)
 
