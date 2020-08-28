@@ -1,59 +1,40 @@
 
+
+@import gorko/gorko
+
+@import config
+
 @import colors
 
-$text-width: 40rem
-$font-size: 1.1rem
+@import gui
+@import content
+@import resume
 
-body, body *
-    box-sizing: border-box
-    margin: 0
+@import colors
 
-strong
-    font-weight: bold
-    color: $scribe
+@import typeography
+
+@import header
+@import footer
+@import social
+@import links
+@import form
+@import page
+@import hero
+@import services
+@import item
+@import bland-fade
+
+
 
 body
-    font-size: $font-size
-    font-family: 'Fira Sans', sans-serif
-    line-height: 2.5em
-    color: $scribe
     background-color: $fill
-
-button
-    font-size: $font-size
-
-h1
-    font-size: 4.8rem
-    color: $scribe
-h2
-    font-size: 2.4rem
-h3
-    font-size: 1.8rem
-
-h1, h2, h3, h4, h5, h6
-    color: $scribe2
-    font-weight: normal
-    max-width: 30em
-    line-height: 1em
-
-    strong
-        color: $focus
-ul, ol
-    line-height: 2em
-
-.mute
-    color: $mute
-
-.shadow
-    color: $fill2
 
 hr
     border-color: $fill2
     border-style: solid
     border-width: 2px
 
-p
-    max-width: $text-width
 
 .relative
     position: relative
@@ -73,6 +54,5 @@ p
 .align-center
     align-self: center
 
-$space: 2rem
 .space-left
     margin-left: $space

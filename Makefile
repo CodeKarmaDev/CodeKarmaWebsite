@@ -1,9 +1,24 @@
-.PHONY: default build serve
+SHELL := /bin/bash
+
+RUBY_VERSION = 2.6.3
+JEKYLL := bundle exec jekyll
+NPM := npm
+
+
+.PHONY: default build serve setup
 
 default: serve
 
+setup:
+	rvm install $(RUBY_VERSION)
+	rvm use $(RUBY_VERSION)
+
+install: package.json Gemfile
+	bundle install
+	$(NPM) install
+
 build:
-	jekyll build
+	$(JEKYLL) build
 
 serve:
-	jekyll serve --livereload
+	$(JEKYLL) serve --livereload
