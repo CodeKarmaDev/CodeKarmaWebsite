@@ -16,14 +16,26 @@
 @import header
 // @import footer
 @import social
-@import links
+
+@import lib/links
 @import form
+
+@import lib/position
 // @import page
 // @import hero
 // @import services
 // @import item
-@import bland-fade
+@import lib/bland-fade
 
+\:root
+    --link-color-base: #{get-color('teal')}
+    --link-color-focus: #{get-color('green')}
+    --link-color-current: #{get-color('shade')}
+
+
+.mx-auto
+    margin-left: auto
+    margin-right: auto
 
 
 hr

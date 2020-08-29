@@ -29,11 +29,11 @@ $gorko-size-scale: (
 /// You can also use them to power borders, fills or shadows, for example.
 ///
 $gorko-colors: (
-  'dark': $black,
-  'gray-dark': $gray-1,
+  'black': $black,
+  'shadow': $gray-1,
   'mute': $gray-2,
   'light': $white,
-  'gray-light': $gray-3,
+  'shade': $gray-3,
   'green': $green,
   'teal': $teal
 );
@@ -63,6 +63,14 @@ $gorko-config: (
     'output': 'responsive',
     'property': 'display'
   ),
+  'justify-content': (
+    'items': (
+      'around': 'space-around',
+      'center': 'center'
+    ),
+    'output': 'standard',
+    'property': 'justify-content'
+  ),
   'font': (
     'items': (
       'base': 'Fira Sans, sans-serif'
@@ -74,15 +82,6 @@ $gorko-config: (
     'items': $gorko-size-scale,
     'output': 'responsive',
     'property': 'font-size'
-  ),
-  'weight': (
-    'items': (
-      'light': '300',
-      'regular': '400',
-      'bold': '700'
-    ),
-    'output': 'standard',
-    'property': 'font-weight'
   ),
   'width': (
     'items': (

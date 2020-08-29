@@ -5,21 +5,22 @@ anim:  'bf fade-in-left x1'
 <!DOCTYPE html>
 <html>
 <head>
-    {% include head.html %}
+    {% include layout/head.html %}
 </head>
 
-<body class="[ bg-dark color-light font-base ]">
-    
-    <div class="header">
 
-        <!-- <div class="bg">
-            <div></div>
-        </div> -->
+<body class="[ bg-black color-light font-base ]">
+    
+    <div class="[ header ] [ bg-black ]">
 
         <header>
-            {% include header.html %}
+            {% include layout/header.html %}
         </header>
 
+    </div>
+
+    <div class="[ site-nav ][ sticky top box-flex justify-content-center bg-black ]">
+        {% include layout/nav.html %}
     </div>
     
     <main class="content {% if page.hero %}spacer{% endif %}">
@@ -37,7 +38,7 @@ anim:  'bf fade-in-left x1'
         </div>
 
         <aside class="social">
-            {% include social.html %}
+            {% include layout/social.html %}
         </aside>
     </div>
     

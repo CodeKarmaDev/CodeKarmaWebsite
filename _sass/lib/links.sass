@@ -3,13 +3,6 @@
     
 $link-hover: -3px
 
-    
-%float
-    transition: transform 50ms ease-out
-    transform-origin: 50% 100%
-    &:hover, &:active, &:focus
-        transform: scale(1.05)
-        // transform: translateY($link-hover)
 
 %underline
     position: relative
@@ -23,25 +16,17 @@ $link-hover: -3px
         left: 0
 
 a, .link
-    @extend %float
+
+    color: var(--link-color-base, #44759c)
+    
     display: inline-block
     outline: none
-    color: $focus2
+
     position: relative
     padding: 0 0.2em
 
     &:hover, &:active, &:focus
-        color: $focus
-
-a.mute, .mute a
-    color: $mute
-    &:hover, &:active, &:focus
-        color: $scribe2
-
-.no-float
-    &:hover, &:active, &:focus
-        transform: scale(1)
-        // transform: translateY(0)
+        color: var(--link-color-focus, #528cbd)
 
 
 
@@ -50,12 +35,13 @@ a.mute, .mute a
     
     &.nav-link
         @extend %underline
+        padding: 0.3em 1em
         &:after
             transition: transform 150ms ease-in
             transform: scaleX(0)
 
     &.nav-link:hover, &.nav-link:focus 
-        color: $focus
+        color: var(--link-color-focus, #528cbd)
         &:after
             transform: scaleX(0.7)
 
@@ -63,8 +49,8 @@ a.mute, .mute a
     &.nav-link.current
         &:after
             transform: scaleX(0.2)
-        color: $scribe2
-        @extend .no-float
+        color: var(--link-color-current, #307fc0)
+
 
 
     &.btn
@@ -73,14 +59,8 @@ a.mute, .mute a
         background-color: #0000
 
 
-.link-row
-    display: grid
-    grid-auto-flow: column
-    grid-gap: 3rem
-    justify-content: start
-
 a.link.btn
-    padding: 0.1em 1.6em
+    padding: 0.6em 1.6em
 
 button.link.btn
     padding: 0.6em 1.6em
