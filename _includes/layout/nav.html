@@ -4,10 +4,10 @@
         
         
         {% if page.permalink == link.href %}
-            <span 
+            <a 
                 class="link nav-link current "
                 href="{{ link.href }}"
-                >{{ link.title }}</span>
+                >{{ link.title }}</a>
 
         {% else %}
             <a 
