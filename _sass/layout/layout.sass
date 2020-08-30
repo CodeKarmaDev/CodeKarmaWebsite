@@ -9,21 +9,16 @@ body
 
     display: flex
     flex-flow: column
-    // position: relative
 
+.wrapper
+    width: calc( 100% - #{get-size('500')} * 2 )
+    max-width: 80rem
+    margin-left: auto
+    margin-right: auto
+    padding-left: get-size('400')
+    padding-right: get-size('400')
+    
 
-    // .header
-    //     position: sticky
-    //     top: 0rem
-        // max-height: $header-max-height
-
-    .footer
-        position: fixed
-        bottom: 0
-
-
-    // .site-nav
-    //     grid-column-end: span 2
-    //     order: 4
-    //     align-self: end
-    //     justify-self: center
+.footer
+    position: fixed
+    bottom: 0

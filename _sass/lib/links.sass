@@ -2,6 +2,8 @@
 @import colors
     
 $link-hover: -3px
+$link-color-base: #44759a
+$link-color-focus: #307fc0
 
 
 %underline
@@ -17,7 +19,7 @@ $link-hover: -3px
 
 a, .link
 
-    color: var(--link-color-base, #44759c)
+    color: var(--link-color-base, #{$link-color-base})
     
     display: inline-block
     outline: none
@@ -26,7 +28,7 @@ a, .link
     padding: 0 0.2em
 
     &:hover, &:active, &:focus
-        color: var(--link-color-focus, #528cbd)
+        color: var(--link-color-focus, #{$link-color-focus})
 
 
 
@@ -41,7 +43,7 @@ a, .link
             transform: scaleX(0)
 
     &.nav-link:hover, &.nav-link:focus 
-        color: var(--link-color-focus, #528cbd)
+        color: var(--link-color-focus, #{$link-color-focus})
         &:after
             transform: scaleX(0.7)
 
@@ -49,7 +51,7 @@ a, .link
     &.nav-link.current
         &:after
             transform: scaleX(0.2)
-        color: var(--link-color-current, #307fc0)
+        color: var(--link-color-current, #{$link-color-focus})
 
 
 

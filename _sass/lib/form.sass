@@ -1,68 +1,52 @@
-%spacing
-    margin-bottom: 1rem
 
+
+$form-bg: #313131 !default
+$form-mute: #383838 !default
+$form-required: #44759a !default
+$form-focus: #307fc0 !default
+$form-outline: #307fc088 !default
+
+\:focus
+    outline: 1px solid var(--form-outline, #{$form-outline})
+    
 
 %field
     display: block
-    background-color: $fill2
-    transition: transform linear 50ms
-    transform-origin: 50% 100%
-    -webkit-text-fill-color: $scribe2
-    -webkit-box-shadow: 0 0 0px 1000px $fill2 inset
-    color: $mute
-    padding: 0.8em 1.6em
-    outline: none
+    box-sizing: border-box
+    background-color: var(--form-bg, #{$form-bg})
+    color: var(--form-mute, #{$form-mute})
+    padding: 0.8em
     width: 100%
     
-    
-    border: $fill2 solid 1px
+    border-style: none
     border-radius: 2px
     
-    &:valid
-        background-color: $fill2
+    border-color: var(--form-mute, #{$form-mute})
     
-    
-    &:defined
-        font-weight: normal
+    &:required
+        border-color: var(--form-required, #{$form-required})
 
-        color: $scribe2
-
-    &:focus, &:hover
-        // transform: scale(1.01)
-        color: $scribe
-        -webkit-text-fill-color: $scribe
-        box-shadow: 0 0 3px $focus
+    &:hover
+        border-color: var(--form-focus, #{$form-focus})
     
 
 %box
-    @extend %field, %spacing
-    -moz-appearance: none
-    border: $mute solid 1px
-    border-right-width: 8px
-
-    &:required
-        border-color: $focus2
-    
-    &:focus, &:hover
-        border-color: $focus
+    @extend %field
+    border-style: solid
+    border-width: 1px
+    border-right-width: 4px
 
 
 %text-field
-    @extend %field, %spacing
-    
-    border-left: $mute solid 8px
-
-    &:required
-        border-left-color: $focus2
-    
-    &:focus, &:hover
-        border-left-color: $focus
+    @extend %field
+    border-left-style: solid
+    border-left-width: 4px
 
 
 %check
     transition: transform linear 50ms
     display: inline-block
-    outline: none
+    // outline: none
     $border: 4px
     $size: 1.8em
     width: $size
@@ -70,7 +54,7 @@
     -webkit-appearance: none
     border-radius: $size / 4
     background-color: $fill
-    border: $mute solid $border
+    border: var(--form-mute, #{$form-mute}) solid $border
     position: relative
     margin-right: 100%
 
@@ -85,37 +69,27 @@
         content: attr(data-label)
 
     &:checked
-        background-color: $focus2
-        border-color: $focus2
+        background-color: var(--form-required, #{$form-required})
+        border-color: var(--form-required, #{$form-required})
     
     &:checked:hover, &:checked:focus
-        background-color: $focus
+        background-color: var(--form-focus, #{$form-focus})
 
     &:hover, &:focus
-        border-color: $focus
+        border-color: var(--form-focus, #{$form-focus})
     &:hover
         transform: scale(1.08)
 
 
-.from
+.form
     .group
         line-height: 1em
-        padding-bottom: 1rem
+        padding-bottom: 1em
 
-    .inline
-        display: grid
-        grid-auto-flow: column
-        grid-gap: 1em
-    &.grid
-        display: grid
-        align-self: center
-    label
-        color: $scribe2
-
-    label.check
+    input[type="radio"] + label,
+    input[type="checkbox"] + label
         padding-left: 1em
         padding-bottom: 1em
-        color: $scribe2
 
     input[type="email"],
     input[type="password"],
@@ -127,7 +101,6 @@
     input[type="text"], 
     textarea, 
         @extend %text-field
-
 
     input[type="checkbox"],
     input[type="radio"]
@@ -147,11 +120,7 @@
     // input[type="file"],
     // input[type="button"]
 
-    .title
-        margin-bottom: 1em
-        color: $mute
-
 
     textarea
-        resize: none
+        resize: vertical
         height: 25vh

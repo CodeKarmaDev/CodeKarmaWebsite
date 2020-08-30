@@ -10,8 +10,10 @@ anim:  'bf fade-in-left x1'
 
 
 <body class="[ bg-black color-light font-base ]">
+
     
-    <div class="[ header ] [ bg-black ]">
+    <div 
+        class="[ header ][ wrapper ][ bg-black relative ]">
 
         <header>
             {% include layout/header.html %}
@@ -19,11 +21,16 @@ anim:  'bf fade-in-left x1'
 
     </div>
 
-    <div class="[ site-nav ][ sticky top box-flex justify-content-center bg-black ]">
+
+    <div 
+        class="
+            [ site-nav ][ wrapper ]
+            [ sticky top bg-black z-i ]"
+        >
         {% include layout/nav.html %}
     </div>
     
-    <main class="content {% if page.hero %}spacer{% endif %}">
+    <main class="wrapper">
 
         <div></div>
 

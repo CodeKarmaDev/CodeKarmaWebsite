@@ -12,6 +12,7 @@
 @import layout/layout
 @import layout/header
 @import layout/social
+@import layout/nav
 
 @import typeography
 
@@ -27,11 +28,13 @@
     --link-color-base: #{get-color('teal')}
     --link-color-focus: #{get-color('green')}
     --link-color-current: #{get-color('shade')}
-
-
-.mx-auto
-    margin-left: auto
-    margin-right: auto
+    
+    --form-color-base: #{get-color('teal')}
+    --form-focus: #{get-color('green')}
+    --form-outline: #{$form-outline}
+    --form-mute: #{get-color('mute')}
+    --form-bg: #{get-color('shadow')}
+    --form-required: #{get-color('teal')}
 
 
 hr
@@ -40,23 +43,6 @@ hr
     border-width: 2px
 
 
-.relative
-    position: relative
-
-.justify-right
-    justify-self: right
-
-.justify-left
-    justify-self: left
-
-.align-start
-    align-self: start
-
-.align-end
-    align-self: end
-
-.align-center
-    align-self: center
-
-.space-left
-    margin-left: $space
+.no-break
+    white-space: nowrap
+    overflow: visable

@@ -38,6 +38,14 @@ $gorko-colors: (
   'teal': $teal
 );
 
+$z-index-layers: (
+  'nnn': -10,
+  'nn': -5,
+  'n': -1,
+  'i': 1,
+  'ii': 5,
+  'iii': 10
+);
 /// CORE CONFIG
 /// This powers everything from utility class generation to breakpoints
 /// to enabling/disabling pre-built components/utilities.
@@ -56,12 +64,19 @@ $gorko-config: (
   'box': (
     'items': (
       'block': 'block',
+      'inline': 'inline',
+      'inline-block': 'inline-block',
       'flex': 'flex',
       'hide': 'none',
       'show': 'inherit'
     ),
     'output': 'responsive',
     'property': 'display'
+  ),
+  'z': (
+    'items': $z-index-layers,
+    'output': 'standard',
+    'property': 'z-index'
   ),
   'justify-content': (
     'items': (
