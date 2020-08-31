@@ -10,6 +10,11 @@ body
     display: flex
     flex-flow: column
 
+    min-height: calc( 100vh + #{get-size('900') * 2} )
+    @include media-query('md')
+        min-height: 100vh
+
+
 .wrapper
     width: calc( 100% - #{get-size('500')} * 2 )
     max-width: 80rem
@@ -18,7 +23,20 @@ body
     padding-left: get-size('400')
     padding-right: get-size('400')
     
+.full-bleed
+
+// .full-screen
+//     min-height: 100% 
+
+.flex-between
+    display: flex
+    justify-content: space-between
+
+.align-self-center
+    align-self: center
 
 .footer
-    position: fixed
-    bottom: 0
+    padding-top: get-size('900')
+    @include media-query('md')
+        position: fixed
+        bottom: 0

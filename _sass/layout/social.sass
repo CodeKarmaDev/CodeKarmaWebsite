@@ -2,13 +2,13 @@
 $size: 2rem
 
 .social
-    position: relative
-    justify-self: end
-    width: 100%
-    display: grid
+    display: flex
+    justify-content: space-around
+    & > *
+        padding: get-size('300') 0
+    @include media-query('md')
+        justify-content: flex-end
+        & > *
+            padding: get-size('300')
 
-    justify-items: center
-    justify-content: end
-    margin: $size / 2 0
-    grid-gap: $size * 2
-    grid-auto-flow: column
+

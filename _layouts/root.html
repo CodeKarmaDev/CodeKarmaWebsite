@@ -30,7 +30,7 @@ anim:  'bf fade-in-left x1'
         {% include layout/nav.html %}
     </div>
     
-    <main class="wrapper">
+    <main class="wrapper full-screen">
 
         <div></div>
 
@@ -39,14 +39,13 @@ anim:  'bf fade-in-left x1'
 
     </main>
 
-    <div class="footer">
+    <div class="[ footer ][ width-full mt-auto ]">
 
-        <div class="bg">
+        <div class="wrapper md:box-flex">
+            <aside class="[ social ][ ml-auto box-flex bg-black ]">
+                {% include layout/social.html %}
+            </aside>
         </div>
-
-        <aside class="social">
-            {% include layout/social.html %}
-        </aside>
     </div>
     
 

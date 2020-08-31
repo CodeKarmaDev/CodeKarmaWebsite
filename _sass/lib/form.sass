@@ -2,6 +2,7 @@
 
 $form-bg: #313131 !default
 $form-mute: #383838 !default
+$form-text: #fff !default
 $form-required: #44759a !default
 $form-focus: #307fc0 !default
 $form-outline: #307fc088 !default
@@ -14,10 +15,10 @@ $form-outline: #307fc088 !default
     display: block
     box-sizing: border-box
     background-color: var(--form-bg, #{$form-bg})
-    color: var(--form-mute, #{$form-mute})
     padding: 0.8em
     width: 100%
     
+    color: var(--form-text, #{$form-text})
     border-style: none
     border-radius: 2px
     
@@ -58,15 +59,14 @@ $form-outline: #307fc088 !default
     position: relative
     margin-right: 100%
 
-    &:before
-        top: -$border
-        left: $size
-        white-space: nowrap
-        width: auto
-        word-wrap: none
-        position: absolute
-        color: $scribe2
-        content: attr(data-label)
+    // &:before
+    //     top: -$border
+    //     left: $size
+    //     white-space: nowrap
+    //     width: auto
+    //     word-wrap: none
+    //     position: absolute
+    //     content: attr(data-label)
 
     &:checked
         background-color: var(--form-required, #{$form-required})
