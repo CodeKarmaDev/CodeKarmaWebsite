@@ -3,6 +3,25 @@
 body
     line-height: 2.5
 
+
+
+
+.text-long
+    max-width: 75em
+
+.text-mid
+    max-width: 35em
+
+.text-short
+    max-width: 18em
+
+.box-text-mid
+    p
+        @extend .text-mid
+
+p
+    @extend .text-long
+
 h1
     font-size: get-size('900')
 h2
@@ -16,6 +35,8 @@ h3,
 h4, 
 h5, 
 h6
+    @extend .text-short
+    margin: get-size('800') 0
     line-height: 1
     font-weight: normal
 
@@ -25,6 +46,10 @@ h6
         color: get-color('shade')
         font-style: normal
 
+h1 + h2,
+h2 + h3
+    margin-top: ( 0 - get-size('800') )
+
 a
     line-height: 1
 
@@ -32,5 +57,7 @@ a
 label
     color: get-color('shade')
 
+\:root
+    @include media-query('md')
+        font-size: get-size('400') * 1.15 
 
-    

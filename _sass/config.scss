@@ -47,6 +47,9 @@ $z-index-layers: (
   'ii': 5,
   'iii': 10
 );
+
+// $margin-scale: map-merge($gorko-size-scale, ('auto':'auto'));
+$margin-scale: ('auto':'auto');
 /// CORE CONFIG
 /// This powers everything from utility class generation to breakpoints
 /// to enabling/disabling pre-built components/utilities.
@@ -78,6 +81,31 @@ $gorko-config: (
     'items': $z-index-layers,
     'output': 'standard',
     'property': 'z-index'
+  ),
+  'mr': (
+    'items': $margin-scale,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  'ml': (
+    'items': $margin-scale,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
+  'mt': (
+    'items': $margin-scale,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'mb': (
+    'items': $margin-scale,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'm': (
+    'items': $margin-scale,
+    'output': 'standard',
+    'property': 'margin'
   ),
   'justify-content': (
     'items': (
@@ -114,4 +142,4 @@ $gorko-config: (
     'md': '(min-width: 48em)',
     'lg': '(min-width: 62em)'
   )
-) ;
+);

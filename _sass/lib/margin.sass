@@ -1,0 +1,14 @@
+
+// $m-directions: ('ml': 'margin-left', 'mr': 'margin-right', 'mt': 'margin-top','mb': 'margin-bottom')
+
+
+// // Margin auto
+// @each $d-name, $d in $m-directions
+//     .#{$d-name}-auto
+//         #{$d}: auto
+
+.my-auto
+    @extend .mt-auto, .mb-auto
+
+.mx-auto
+    @extend .ml-auto, .mr-auto
