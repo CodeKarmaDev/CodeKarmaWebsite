@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact
+title: Contact Me
 permalink: /contact/
 subject: Code Karma | Contact
 sendto: "https://formspree.io/moqkloak"
