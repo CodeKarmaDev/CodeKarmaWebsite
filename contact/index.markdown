@@ -10,9 +10,10 @@ accepting_work: true
 {% assign email =  site.data.social | find: 'name', 'Email' %}
 {% assign linkedin =  site.data.social | find: 'name', 'Linkedin' %}
 
-You can also
-email me directly with
-[{{ site.email }}](mailto:{{ site.email }}),
+
+### Email me directly
+
+with [{{ site.email }}](mailto:{{ site.email }}),
 
 
 or get in touch through [ Linkedin ](https://www.linkedin.com/in/{{ site.linkedin }}/).
