@@ -33,7 +33,7 @@ $gorko-colors: (
   'black': $black,
   'shadow': $gray-1,
   'mute': $gray-2,
-  'light': $white,
+  'white': $white,
   'shade': $gray-3,
   'green': $green,
   'teal': $teal
@@ -115,6 +115,7 @@ $gorko-config: (
     'output': 'standard',
     'property': 'justify-content'
   ),
+
   'font': (
     'items': (
       'base': 'Fira Sans, sans-serif'

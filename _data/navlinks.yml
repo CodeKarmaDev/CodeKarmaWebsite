@@ -2,6 +2,12 @@
 - title: Home
   href: /
 
+# - title: My Work
+#   href: '/work/'
+
+- title: Contact
+  href: '/contact/'
+
 # - title: Services
 #   href: '/services/'
 
@@ -12,14 +18,9 @@
 # - title: Skills
 #   href: '/skills/'
 
-# - title: Portfolio
-#   href: '/portfolio/'
 
-- title: Resume
-  href: '/resume/'
+# - title: Resume
+#   href: '/resume/'
 
 # - title: Skills
 #   href: '/skills/'
-
-- title: Contact
-  href: '/contact/'

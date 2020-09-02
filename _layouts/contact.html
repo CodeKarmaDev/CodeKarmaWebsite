@@ -4,37 +4,39 @@ anim:  'bf fade-in-left x1'
 ---
 
 
+<div class="columns-split split">
 
-<form
-    class="form grid split-left {{ layout.anim }}"
-    action="{{ page.sendto }}"
-    method="POST"
-    >
-    
-    {% include form/title.html %}
+    <form
+        class="form grid {{ layout.anim }}"
+        action="{{ page.sendto }}"
+        method="POST"
+        >
+        
+        {% include form/title.html %}
 
-    {% include form/name.html %}
+        {% include form/name.html %}
 
-    {% include form/email.html %}
+        {% include form/email.html %}
 
-    <div class="group">
-        <label
-            for="reason"
-            >Subject</label>
-        <input
-            id="reason"
-            type="text" 
-            name="reason"
-            >
-    </div>
+        <div class="group">
+            <label
+                for="reason"
+                >Subject</label>
+            <input
+                id="reason"
+                type="text" 
+                name="reason"
+                >
+        </div>
 
-    {% include form/message.html %}
+        {% include form/message.html %}
 
-    <!-- <div>
-        <button type="submit" class="link btn">Send</button>
-    </div> -->
-</form>
+        <!-- <div>
+            <button type="submit" class="link btn">Send</button>
+        </div> -->
+    </form>
 
-<section class="page {{ layout.anim }} split-right">
-    {{ content }}
-</section>
+    <section class="page {{ layout.anim }}">
+        {{ content }}
+    </section>
+</div>

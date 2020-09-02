@@ -43,13 +43,31 @@
     --link-color-focus: #{get-color('shade')}
     --link-color-current: #{get-color('shade')}
 
+.card
+    padding: get-size('900')
+    border-radius: get-size('400')
 
 hr
     border-color: $fill2
     border-style: solid
     border-width: 2px
 
+// .center
+//     margin: auto
 
 .no-break
     white-space: nowrap
     overflow: visable
+
+@include media-query('md')
+    .split
+        display: grid
+        grid-template-columns: minmax( 60%, auto ) minmax( 30% ,auto)
+        gap: get-size('900')
+
+        & > *:nth-child(odd)
+            grid-column: 1/2
+        & > *:nth-child(even)
+            grid-column: 2/3
+        // &:last-child
+        //     width: 40% 

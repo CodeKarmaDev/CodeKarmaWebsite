@@ -3,16 +3,18 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: home
 # class: home
 spacer: true
-title: Sean Ferney
+title: User Focused Websites
+description: "description"
 permalink: /
 hero: true
 actions:
+# - name: View My Work
+#   url: /work/
 - name: Contact Me
   url: /contact/
-- name: My Resume
-  url: /resume/
 ---
 
 Hi, I'm **Sean Ferney**, a full-stack web developer who loves to build software that makes money and solves problems.
