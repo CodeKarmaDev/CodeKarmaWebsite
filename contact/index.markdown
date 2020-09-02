@@ -13,7 +13,7 @@ accepting_work: true
 
 ### Email me directly
 
-with [{{ site.email }}](mailto:{{ site.email }}),
+with [{{ site.email }}](mailto:{{ site.email }})
 
 
 or get in touch through [ Linkedin ](https://www.linkedin.com/in/{{ site.linkedin }}/).
