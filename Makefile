@@ -5,7 +5,7 @@ JEKYLL := bundle exec jekyll
 NPM := npm
 
 
-.PHONY: default build serve sync
+.PHONY: default build serve sync aws_pre_build aws_build
 
 default: serve
 
@@ -22,3 +22,7 @@ build:
 
 serve:
 	$(JEKYLL) serve --livereload
+
+aws_pre_build: sync install
+
+aws_build: build
